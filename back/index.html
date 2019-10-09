@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Repl Dashboard</title>
+
+    <link rel="shortcut icon" href="https://repl.it/public/images/favicon.ico" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script> 
+    <script src="index_script.js"></script>  
+
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.3.5/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.3.5/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.3.5/firebase-database.js"></script>
+    <script defer src="/__/firebase/6.3.5/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.3.5/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1">
+                <img src="https://www.kgkite.ac.in/wp-content/uploads/2016/12/logo_black-min.png" height="100" width="200" align="left"/>
+            </div>
+            <div class="col-lg-10">
+                <h1 style="text-align: center;padding: 2%;"><b>100 Days of Coding Dashboard</b></h1>
+            </div>
+            <div class="col-lg-1">
+                <img src="https://repl.it/public/images/logo-small.png" align="right" style="padding: 10%;"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        
+          Year :
+          <select name="year">
+            <option value="2019" selected="selected">2019</option>
+          </select>
+          
+          Month :
+          <select name="month">
+            <option value="Aug" selected="selected">Aug</option>
+          </select>
+          
+          Date :
+          <select name="date">
+            <option value="9" selected="selected">9</option>
+            <option value="10">10</option>
+          </select>
+         
+          Task :
+          <select name="task">
+            <option value="Task1" selected="selected">Task1</option>
+            <option value="Task2">Task2</option>
+            <option value="Task3">Task3</option>
+          </select>
+          
+          <button type="submit" onclick="display_data()"> Submit </button>
+    </div>
+    <div id="table_data">
+    </div>
+  </body>
+</html>

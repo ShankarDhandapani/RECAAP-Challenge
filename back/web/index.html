@@ -1,0 +1,16 @@
+<html>
+    <body>
+        Cars
+        <select id="cars">
+            <option id="1" selected="selected">BMW</option>
+            <option id="2">Toyota</option>
+        </select>
+        <button onclick="display_option()">Click me</button>
+        <script>
+            function display_option() {
+                var option_dis = document.getElementById("cars");
+                console.log(option_dis.options[option_dis.selectedIndex].text);
+            }
+        </script>
+    </body>
+</html>
